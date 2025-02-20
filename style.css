@@ -1,0 +1,253 @@
+body{
+    background-color: black;
+}
+
+.container{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    font-family: garamond;
+    height:100vh;
+}
+
+.leftpanel{
+    text-transform: capitalize;
+    font-weight:bold;
+    background-color: white;
+}
+
+.leftpanel h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: lightblue;
+    padding-left: 0;
+    display: flex;
+}
+
+.leftpanel h2 img {
+    height: 30px;
+    width: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+.leftpanel nav ul{
+    list-style-type:none;
+    padding-left: 10px;
+}
+
+.leftpanel ul li {
+    position: sticky;
+    padding-left: 50px; /* Leave space for the icon */
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-right: 0px;
+}
+
+li:hover{
+    background-color:lightblue;
+    font-weight:bold;
+}
+
+li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.home::before {background-image: url("https://cdn-icons-png.flaticon.com/128/18511/18511239.png");}
+.profile::before { background-image: url("https://cdn-icons-png.flaticon.com/128/9187/9187532.png");}
+.messages::before { background-image: url("https://cdn-icons-png.flaticon.com/128/9187/9187566.png");}
+.history::before { background-image: url("https://cdn-icons-png.flaticon.com/128/2530/2530313.png");}
+.tasks::before { background-image: url("https://cdn-icons-png.flaticon.com/128/906/906334.png");}
+.comunities::before { background-image: url("https://cdn-icons-png.flaticon.com/128/17784/17784590.png");}
+
+.setting::before{background-image: url("https://cdn-icons-png.flaticon.com/128/2698/2698011.png");}
+.support::before{background-image: url("https://cdn-icons-png.flaticon.com/128/18239/18239123.png");}
+.privacy::before{background-image: url("https://cdn-icons-png.flaticon.com/128/5028/5028028.png");}
+
+.rightcontent{
+    font-family: garamond;
+    background-color:lightgray;
+}
+
+.rightcontent .stickybar{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: lightblue;
+    height:50px;
+    align-items: center;
+}
+
+.rightcontent .stickybar form {
+    display:flex;
+    align-items: center;
+    height:40px;
+}
+
+.rightcontent .stickybar form .search{
+    padding-left: 10px;
+    height:40px;
+    width: 50px;
+    cursor:pointer;
+}
+.rightcontent .stickybar form input{
+    border-radius: 20px;
+    width: 100%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.rightcontent .stickybar div{
+    display: flex;
+    padding-left: 10%;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor:pointer;
+}
+.rightcontent.stickybar div img{
+    /**/
+}
+.rightcontent.stickybar div span{
+    font-weight: bold;
+}
+
+body .container .subject .yourproject {
+    float:left;
+    width:80%;
+}
+
+body .subject {
+    display:flex;
+    text-transform:capitalize;
+    font-weight:bold;
+    font-size:1.2rem;
+    padding:10px;
+}
+
+body .subject .yourproject {
+    flex:4;
+}
+body .subject .announcements {
+    flex:1;
+    padding-left:10px;
+}
+
+body span {
+    text-transform:capitalize;
+    font-weight:bold;
+    font-size: 1rem;
+}
+
+body p {
+    font-size:0.8rem;
+}
+
+body img {
+    display: inline-block;
+    width:1rem;
+    height:1rem;
+    float: right;
+    padding-right:10px;
+    cursor:pointer;
+}
+
+body .content ::after{
+    content: "";
+    clear:both;
+    display:table;
+}
+
+body .content{
+    display:flex;
+}
+
+body .firstcolumn, body .secondcolumn, body .thirdcolumn {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+body .firstcolumn div, body .secondcolumn div, body .thirdcolumn div {
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+body .firstcolumn {
+    flex:2;
+    padding-left: 10px;
+}
+
+body .secondcolumn{
+    flex:2;
+    padding-left:10px;
+}
+
+body .thirdcolumn {
+    flex:1;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+
+body .firstcolumn img, body .secondcolumn img {
+    padding-top: 10%
+}
+
+body .firstcolumn div, body .secondcolumn div, body .thirdcolumn div {
+    display: block;
+    margin-top:10px;
+    margin-bottom: 10px;
+    padding:10px 10px;
+    background-color:white;
+    border-radius: 6px;
+    border-left: 20px solid orange;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+body .content .thirdcolumn div {
+    border-left: solid white;
+}
+
+body .content .thirdcolumn span {
+    border-left: solid white;
+    font-size: 0.8rem;
+}
+
+body .content .thirdcolumn p {
+    border-left: solid white;
+    font-size: 0.6rem;
+}
+
+body .content .thirdcolumn .title {
+    font-size:1.5rem;
+    border-left:transparent;
+}
+
+
+body .thirdcolumn .trending {
+    display: block;
+}
+
+body .thirdcolumn .trending img{
+    display: inline-block;
+    float: left;
+    height:3rem;
+    width:3rem;
+}
+
